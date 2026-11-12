@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#b45309">
-<title>Tabla de Alimentación – 2 Jaulas (2 Hembras + 1 Macho)</title>
+<title>Tabla de Alimentación – Ratas (Perú/Pisco)</title>
 <style>
 @page{size:A4 landscape;margin:8mm}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-:root{--bg:#f6f4ef;--card:#fff;--text:#1f2937;--soft:#4b5563;--line:#e7e3d9;--brand:#b45309;--brand2:#fef3c7;--manana:#fff7ed;--noche:#eef2ff;--sh:0 1px 3px rgba(0,0,0,.04),0 6px 18px rgba(0,0,0,.05);--hoy-line:#b45309;--tip:#fff8e1;--tip-border:#ffd54f;--glow:rgba(180,83,9,.45);--alert-bg:linear-gradient(135deg,#fef3c7,#fff7ed);--empty-bg:linear-gradient(135deg,#f3f4f6,#fafafa);--jaula-h:#fce7f3;--jaula-m:#dbeafe;--jaula-h-t:#9d174d;--jaula-m-t:#1e40af}
-@media(prefers-color-scheme:dark){:root{--bg:#14110d;--card:#1c1813;--text:#ece7dd;--soft:#a8a29a;--line:#332c22;--brand:#fbbf24;--brand2:#2a2010;--manana:#241a10;--noche:#181a2a;--sh:0 1px 3px rgba(0,0,0,.35),0 6px 18px rgba(0,0,0,.45);--hoy-line:#fbbf24;--tip:#2a2519;--tip-border:#5c4a1a;--glow:rgba(251,191,36,.45);--alert-bg:linear-gradient(135deg,#2a2010,#241a10);--empty-bg:linear-gradient(135deg,#1c1813,#232019);--jaula-h:#2a1e26;--jaula-m:#181f2a;--jaula-h-t:#f9a8d4;--jaula-m-t:#93c5fd}}
+:root{--bg:#f6f4ef;--card:#fff;--text:#1f2937;--soft:#4b5563;--line:#e7e3d9;--brand:#b45309;--brand2:#fef3c7;--manana:#fff7ed;--noche:#eef2ff;--sh:0 1px 3px rgba(0,0,0,.04),0 6px 18px rgba(0,0,0,.05);--hoy-line:#b45309;--tip:#fff8e1;--tip-border:#ffd54f;--glow:rgba(180,83,9,.45);--alert-bg:linear-gradient(135deg,#fef3c7,#fff7ed);--empty-bg:linear-gradient(135deg,#f3f4f6,#fafafa);--jaula-h:#fce7f3;--jaula-m:#dbeafe;--jaula-h-t:#9d174d;--jaula-m-t:#1e40af;--total-bg:#f0fdf4;--total-t:#166534;--total-line:#86efac;--item-total-bg:#fffbeb;--item-total-t:#b45309;--item-total-line:#fcd34d;--emergency-bg:#fff1f2;--emergency-border:#f43f5e;--emergency-t:#be123c}
+@media(prefers-color-scheme:dark){:root{--bg:#14110d;--card:#1c1813;--text:#ece7dd;--soft:#a8a29a;--line:#332c22;--brand:#fbbf24;--brand2:#2a2010;--manana:#241a10;--noche:#181a2a;--sh:0 1px 3px rgba(0,0,0,.35),0 6px 18px rgba(0,0,0,.45);--hoy-line:#fbbf24;--tip:#2a2519;--tip-border:#5c4a1a;--glow:rgba(251,191,36,.45);--alert-bg:linear-gradient(135deg,#2a2010,#241a10);--empty-bg:linear-gradient(135deg,#1c1813,#232019);--jaula-h:#2a1e26;--jaula-m:#181f2a;--jaula-h-t:#f9a8d4;--jaula-m-t:#93c5fd;--total-bg:#16261a;--total-t:#86efac;--total-line:#166534;--item-total-bg:#2a2010;--item-total-t:#fcd34d;--item-total-line:#78350f;--emergency-bg:#2a1014;--emergency-border:#be123c;--emergency-t:#fda4af}
 @keyframes fadeDown{from{opacity:0;transform:translateY(-14px)}to{opacity:1;transform:none}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 @keyframes pop{0%{transform:scale(.85);opacity:0}60%{transform:scale(1.05)}100%{transform:scale(1);opacity:1}}
@@ -30,7 +30,6 @@ h1{font-size:26px;font-weight:700;color:var(--brand);margin-bottom:6px;letter-sp
 .pill-hora{background:var(--brand2);color:var(--brand)}
 .pill-hora.tick{animation:tick .35s ease}
 .pill-info{background:var(--brand2);color:var(--brand);font-size:11px;padding:5px 12px}
-
 .jaulas-box{max-width:1180px;margin:0 auto 14px;padding:14px 20px;background:var(--card);border:2px solid var(--line);border-radius:14px;box-shadow:var(--sh);animation:fadeUp .45s ease both}
 .jaulas-head{font-weight:700;color:var(--brand);margin-bottom:10px;font-size:15px;display:flex;align-items:center;gap:8px}
 .jaulas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
@@ -43,7 +42,6 @@ h1{font-size:26px;font-weight:700;color:var(--brand);margin-bottom:6px;letter-sp
 .jaula-sub{font-size:12px;color:var(--soft);font-weight:500}
 .jaula-cant{font-weight:800;font-size:12.5px;margin-top:4px;color:var(--text)}
 .jaulas-note{margin-top:10px;font-size:12px;color:var(--soft);font-weight:600;line-height:1.5}
-
 .hoy-box{max-width:1180px;margin:0 auto 14px;padding:14px 20px;background:var(--card);border:2px solid var(--brand2);border-radius:14px;box-shadow:var(--sh);animation:fadeUp .5s ease both}
 .hoy-head{font-weight:700;color:var(--brand);margin-bottom:10px;font-size:15px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .hoy-head .hoy-dia-tag{background:var(--brand);color:#fff;font-size:11.5px;padding:2px 10px;border-radius:12px;font-weight:700;letter-spacing:.4px}
@@ -55,10 +53,10 @@ h1{font-size:26px;font-weight:700;color:var(--brand);margin-bottom:6px;letter-sp
 .hoy-cage b{font-weight:800}
 .hoy-cage.h{background:var(--jaula-h);color:var(--jaula-h-t)}
 .hoy-cage.m{background:var(--jaula-m);color:var(--jaula-m-t)}
+.hoy-total{padding:6px 10px;border-radius:8px;font-size:12px;line-height:1.4;font-weight:700;background:var(--total-bg);color:var(--total-t);border:1px solid var(--total-line)}
 .hoy-manana{background:var(--manana)}
 .hoy-noche{background:var(--noche)}
 .hoy-hint{margin-top:8px;font-size:11.5px;color:var(--soft);font-weight:500;font-style:italic}
-
 .alert-box{max-width:1180px;margin:0 auto 14px;padding:14px 20px;background:var(--alert-bg);border:2px solid var(--brand);border-radius:14px;animation:fadeUp .5s ease both}
 .alert-box.vacio{background:var(--empty-bg);border-color:var(--line)}
 .alert-head{font-weight:700;color:var(--brand);margin-bottom:8px;font-size:15px;display:flex;align-items:center;gap:8px}
@@ -69,29 +67,30 @@ h1{font-size:26px;font-weight:700;color:var(--brand);margin-bottom:6px;letter-sp
 .alert-item{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:6px 0;font-size:13.5px;border-bottom:1px dashed var(--line)}
 .alert-item:last-child{border-bottom:none}
 .alert-item .alert-zona{font-weight:700;flex:1 1 auto;min-width:150px}
-.alert-item .alert-qty{margin-left:auto;background:var(--brand);color:#fff;padding:2px 10px;border-radius:12px;font-size:11.5px;font-weight:700;white-space:nowrap}
+.alert-item .alert-qty{background:var(--brand);color:#fff;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:700;white-space:nowrap}
+.alert-item .alert-total-item{background:var(--item-total-bg);color:var(--item-total-t);padding:2px 8px;border-radius:12px;font-size:11px;font-weight:800;white-space:nowrap;border:1px solid var(--item-total-line)}
 .alert-cages{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:6px}
 .alert-cage{padding:7px 10px;border-radius:8px;font-size:12px;line-height:1.4;font-weight:600}
 .alert-cage.h{background:var(--jaula-h);color:var(--jaula-h-t)}
 .alert-cage.m{background:var(--jaula-m);color:var(--jaula-m-t)}
 .alert-cage b{font-weight:800}
+.alert-total{margin-top:6px;padding:8px 12px;border-radius:8px;font-size:13px;font-weight:800;background:var(--total-bg);color:var(--total-t);border:1px solid var(--total-line);text-align:center}
 .alert-tip{margin-top:8px;padding-top:8px;border-top:1px solid var(--line);font-size:12.5px;color:var(--soft);font-weight:600}
 .alert-vacio-msg{font-size:13.5px;font-weight:600;color:var(--text)}
 .alert-vacio-prox{margin-top:6px;font-size:12.5px;color:var(--soft);font-weight:600}
-
 .tip-box{max-width:1180px;margin:0 auto 14px;padding:14px 20px;background:var(--tip);border:2px solid var(--tip-border);border-radius:14px;display:flex;align-items:center;gap:12px;font-size:14px;font-weight:600;line-height:1.4;transition:background .4s,border-color .4s;animation:fadeUp .7s ease both;position:relative;overflow:hidden}
 .tip-box::before{content:"";position:absolute;top:0;left:0;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);transform:translateX(-100%);animation:shine 4s linear infinite;pointer-events:none;will-change:transform}
 .tip-box .tip-icon{font-size:22px;flex-shrink:0;position:relative;z-index:1}
 .tip-box .tip-text{flex:1;position:relative;z-index:1}
 .tip-box.cambia .tip-text{animation:tipIn .5s ease}
 .tip-box.cambia .tip-icon{animation:pop .5s ease}
-
 .emg-box{max-width:1180px;margin:0 auto 22px;padding:14px 20px;background:var(--card);border:2px dashed var(--brand2);border-radius:14px;animation:fadeUp .8s ease both}
 .emg-head{font-weight:700;color:var(--brand);margin-bottom:10px;font-size:14.5px;display:flex;align-items:center;gap:8px}
 .emg-list{display:flex;flex-wrap:wrap;gap:7px}
 .emg-pill{background:var(--brand2);color:var(--brand);padding:6px 12px;border-radius:16px;font-size:12.5px;font-weight:600}
 .emg-note{margin-top:10px;font-size:12px;color:var(--soft);font-weight:500;line-height:1.5}
-
+.emg-sustituto{margin-top:12px;padding:12px;border-radius:10px;background:var(--emergency-bg);border:1px solid var(--emergency-border);color:var(--emergency-t);font-size:13px;line-height:1.5}
+.emg-sustituto strong{display:block;margin-bottom:4px;font-size:13.5px;color:var(--emergency-t)}
 .tabla-wrap{max-width:1180px;margin:0 auto;background:var(--card);border-radius:16px;box-shadow:var(--sh);overflow:hidden;animation:fadeUp .9s ease both}
 table{width:100%;border-collapse:separate;border-spacing:0;font-size:13.5px}
 th{background:var(--brand);color:#fff;font-size:13px;font-weight:600;padding:16px 14px;text-align:center;letter-spacing:.3px;position:sticky;top:0;z-index:2}
@@ -106,10 +105,17 @@ td.dia{text-align:center;width:56px;padding:12px 4px;background:var(--brand2);le
 .tarea-linea .gramos-rata{font-weight:800;color:var(--brand);font-size:13px}
 .cage-split{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px}
 .cage-pill{padding:3px 8px;border-radius:8px;font-size:11px;font-weight:700;line-height:1.3}
-.cage-pill.h{background:var(--jaula-h);color:var(--jaula-h-t)}
-.cage-pill.m{background:var(--jaula-m);color:var(--jaula-m-t)}
+.cage-pill.h{background:var(--jaula-h);color:var(--jaula-h-t);border:1px solid var(--jaula-h-t)}
+.cage-pill.m{background:var(--jaula-m);color:var(--jaula-m-t);border:1px solid var(--jaula-m-t)}
+.cage-pill.t{background:var(--item-total-bg);color:var(--item-total-t);border:1px solid var(--item-total-line);font-weight:800}
 .opciones{display:block;font-size:11px;color:var(--soft);margin-top:4px;padding-left:2px;font-weight:500;font-style:italic;line-height:1.4}
 .opciones b{color:var(--brand);font-weight:700;font-style:normal}
+.meal-total{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;padding:10px 12px;border-radius:10px;background:var(--total-bg);border:1.5px solid var(--total-line);align-items:center}
+.meal-total .mt-label{font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--total-t);margin-right:2px;flex:0 0 100%}
+.meal-total .mt-pill{padding:4px 10px;border-radius:8px;font-size:11.5px;font-weight:800;line-height:1.3;background:#fff;color:var(--total-t);border:1px solid var(--total-line)}
+.meal-total .mt-pill.h{background:var(--jaula-h);color:var(--jaula-h-t);border-color:var(--jaula-h-t)}
+.meal-total .mt-pill.m{background:var(--jaula-m);color:var(--jaula-m-t);border-color:var(--jaula-m-t)}
+@media(prefers-color-scheme:dark){.meal-total .mt-pill{background:#0f1a13}}
 .t-pienso{border-color:#b45309;background:rgba(180,83,9,.06)}
 .t-huevo{border-color:#eab308}
 .t-carne{border-color:#ea580c}
@@ -149,7 +155,8 @@ body{padding:22px 14px 32px;font-size:14.5px}h1{font-size:21px}.subtitle{font-si
 .hoy-item{padding:9px 11px;font-size:12.5px}
 .hoy-item .hoy-name{font-size:12px}
 .alert-box{padding:12px 14px;margin-bottom:12px}.alert-head{font-size:14px}.alert-item{font-size:12.5px}
-.alert-item .alert-qty{font-size:11px;padding:2px 8px}
+.alert-item .alert-qty{font-size:10.5px;padding:2px 6px}
+.alert-item .alert-total-item{font-size:10.5px;padding:2px 6px}
 .alert-cages{grid-template-columns:1fr}
 .alert-vacio-msg{font-size:13px}.alert-vacio-prox{font-size:12px}
 .tip-box{font-size:13px;padding:12px 16px;margin:0 auto 12px}.tip-box .tip-icon{font-size:20px}
@@ -167,20 +174,21 @@ body{padding:22px 14px 32px;font-size:14.5px}h1{font-size:21px}.subtitle{font-si
 .comida.activa{background-image:linear-gradient(90deg,transparent,var(--glow),transparent);animation:usePulse 2.5s ease-in-out infinite;border-radius:8px;margin:4px}
 .comida .nombre{display:block;font-weight:700;font-size:12.5px;margin-bottom:4px;color:var(--soft);letter-spacing:.3px;text-transform:uppercase}
 .manana-bg{background:var(--manana)}.noche-bg{background:var(--noche)}
+.meal-total .mt-label{font-size:11px}
 }
-@media(max-width:400px){body{padding:18px 10px 28px}h1{font-size:19px}.comida{font-size:13px;padding:12px 15px}.card-head{font-size:13.5px;padding:12px 15px}.tip-box{font-size:12px;padding:10px 14px}.hoy-item{padding:8px 10px;font-size:12px}.tarea-linea{font-size:12px;padding:4px 6px}.opciones{font-size:10.5px}.cage-pill{font-size:10.5px}}
+@media(max-width:400px){body{padding:18px 10px 28px}h1{font-size:19px}.comida{font-size:13px;padding:12px 15px}.card-head{font-size:13.5px;padding:12px 15px}.tip-box{font-size:12px;padding:10px 14px}.hoy-item{padding:8px 10px;font-size:12px}.tarea-linea{font-size:12px;padding:4px 6px}.opciones{font-size:10.5px}.cage-pill{font-size:10.5px;padding:2px 6px}.meal-total{padding:8px 10px}.meal-total .mt-pill{font-size:10.5px;padding:3px 8px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
 
 <header>
-<h1>🐀 Tabla de Alimentación</h1>
-<p class="subtitle">2 jaulas · 2 hembras juntas + 1 macho solo · Gramos por rata y por jaula</p>
+<h1>🐀 Tabla de Alimentación (Perú)</h1>
+<p class="subtitle">2 jaulas · 2 hembras juntas + 1 macho solo · Base: Pellet de Cuy (Corina/B3) + Proteína + Verdura</p>
 <div class="info-bar">
 <span class="pill pill-dia" id="pillDia">📅 Cargando día...</span>
 <span class="pill pill-hora" id="pillHora">⏰ --:-- --</span>
-<span class="pill pill-info" id="pillInfo">🏠 2 jaulas · 7 g pienso/rata/comida</span>
+<span class="pill pill-info" id="pillInfo">🏠 2 jaulas · Raciones y totales</span>
 </div>
 </header>
 
@@ -189,28 +197,28 @@ body{padding:22px 14px 32px;font-size:14.5px}h1{font-size:21px}.subtitle{font-si
 <div class="jaulas-grid">
   <div class="jaula-card h">
     <div class="jaula-title">🐭🐭 Jaula de las hembras</div>
-    <div class="jaula-sub">2 hembras juntas · <b>doble ración por jaula</b></div>
-    <div class="jaula-cant">Pienso: 14 g/comida en su comedero</div>
+    <div class="jaula-sub">2 hembras juntas · comen del mismo plato</div>
+    <div class="jaula-cant">Pienso de cuy: 14 g/comida en su comedero</div>
   </div>
   <div class="jaula-card m">
     <div class="jaula-title">🐭 Jaula del macho</div>
-    <div class="jaula-sub">1 macho solo · <b>ración individual</b></div>
-    <div class="jaula-cant">Pienso: 7 g/comida en su comedero</div>
+    <div class="jaula-sub">1 macho solo · ración individual</div>
+    <div class="jaula-cant">Pienso de cuy: 7 g/comida en su comedero</div>
   </div>
 </div>
-<div class="jaulas-note">⚠️ Las 2 hembras comen juntas en su jaula. El macho come aparte. Nunca los juntes (riesgo de cría). No cambies comida entre jaulas.</div>
+<div class="jaulas-note">⚠️ Las 2 hembras comen juntas en su jaula (un solo plato). El macho come aparte en su jaula. Usa la etiqueta amarilla para saber cuánto cocinar en total.</div>
 </div>
 
 <div class="hoy-box" id="hoyBox" aria-live="polite">
 <div class="hoy-head"><span>🍽️ Hoy comen</span><span class="hoy-dia-tag" id="hoyTag">—</span></div>
 <div class="hoy-list" id="hoyList"></div>
-<div class="hoy-hint">◆ = tiene alternativas. Los gramos en la tabla son POR RATA. Las cantidades por jaula salen en las etiquetas de colores.</div>
+<div class="hoy-hint">◆ = alternativas (eliges SOLO UNA). Las etiquetas dicen cuánto va en cada plato. La etiqueta amarilla es el total a cocinar.</div>
 </div>
 
 <div class="alert-box" id="alertBox" aria-live="polite">
 <div class="alert-head"><span class="dot"></span><span id="alertTitle">Comidas de hoy</span></div>
 <div class="alert-list" id="alertList"></div>
-<div class="alert-tip" id="alertTip">💡 Pesa el pienso en seco y los complementos ya cocidos, escurridos y fríos. Sirve una ración por jaula.</div>
+<div class="alert-tip" id="alertTip">💡 Pesa el pienso en seco y los complementos ya cocidos, escurridos y fríos. Sirve la ración correspondiente a cada plato.</div>
 </div>
 
 <div class="tip-box" id="tipBox" aria-live="polite"><span class="tip-icon" id="tipIcon">💡</span><span class="tip-text" id="tipText">Cargando recomendación...</span></div>
@@ -218,18 +226,28 @@ body{padding:22px 14px 32px;font-size:14.5px}h1{font-size:21px}.subtitle{font-si
 <div class="emg-box">
 <div class="emg-head">🧺 Despensa de emergencia (si no tienes algo)</div>
 <div class="emg-list">
-<span class="emg-pill">🌾 Pienso (siempre)</span>
-<span class="emg-pill">🥚 Huevo duro (5 min)</span>
+<span class="emg-pill">🌾 Pellet de Cuy (Corina/B3)</span>
+<span class="emg-pill">🥚 Huevo duro</span>
 <span class="emg-pill">🍚 Arroz blanco cocido</span>
-<span class="emg-pill">🍝 Pasta cocida</span>
-<span class="emg-pill">🥕 Zanahoria rallada cruda</span>
-<span class="emg-pill">🥒 Pepino en rodajas</span>
+<span class="emg-pill">🍝 Fideos cocidos</span>
+<span class="emg-pill">🥕 Zanahoria rallada</span>
 <span class="emg-pill">🍅 Tomate sin semillas</span>
 <span class="emg-pill">🍎 Manzana en trocitos</span>
-<span class="emg-pill">🍐 Pera en trocitos</span>
+<span class="emg-pill">🍌 Plátano maduro</span>
 <span class="emg-pill">🍗 Pollo hervido</span>
-<span class="emg-pill">🐟 Atún al natural escurrido</span>
+<span class="emg-pill">🐟 Atún al natural</span>
 <span class="emg-pill">🥦 Brócoli al vapor</span>
+<span class="emg-pill">🫘 Lentejas cocidas</span>
+<span class="emg-pill">🌽 Choclo cocido</span>
+<span class="emg-pill">🍠 Camote cocido</span>
+</div>
+<div class="emg-sustituto">
+<strong>🚨 ¿Se acabó el pellet de cuy? (La mejor opción casera de emergencia)</strong>
+Si no tienes pellet de cuy o pienso comercial, reemplaza los 7 g de base por esta receta exacta por cada rata:
+<br>• <b>4 g de arroz blanco bien cocido</b> (sin sal ni aceite).
+<br>• <b>3 g de huevo duro</b> bien picadito.
+<br>• <b>1 rodajita muy pequeña de zanahoria cruda</b> (para la vitamina A).
+<br><i>Úsalo solo por pocos días hasta que consigas el pellet de cuy, ya que las ratas necesitan los nutrientes específicos de una dieta balanceada.</i>
 </div>
 <div class="emg-note">⚠️ Sin sal, sin aceite, sin especias. Cocina al vapor o hervido. Pesa los complementos ya cocidos y escurridos.</div>
 </div>
@@ -239,99 +257,94 @@ body{padding:22px 14px 32px;font-size:14.5px}h1{font-size:21px}.subtitle{font-si
 <div class="tabla-wrap"><table id="tabla"><thead><tr><th>Día</th><th>🌅 Mañana · 8:00–9:00</th><th>🌙 Noche · 20:00–21:00</th></tr></thead><tbody id="tbody"></tbody></table></div>
 <div class="cards" id="cards"></div>
 
-<footer class="footer">🐭 Alimentación para 2 jaulas · Hembras juntas + macho solo<span class="nota">⚠️ Nunca des cebolla, ajo, puerro, aguacate, chocolate, cafeína, alcohol, uvas, pasas, cítricos, mango, ruibarbo, patata verde o brotes, ni lácteos. Agua limpia siempre en las 2 jaulas. Si una hembra está preñada o lactando, duplica el pienso de su jaula y consulta al veterinario.</span></footer>
+<footer class="footer">🐭 Alimentación para 2 jaulas · Hembras juntas + macho solo<span class="nota">⚠️ Nunca des cebolla, ajo, puerro, aguacate, chocolate, cafeína, alcohol, uvas, pasas, cítricos, mango, ruibarbo, patata verde o brotes, ni lácteos. Agua limpia siempre en las 2 jaulas. Base económica: Pellet de Cuy (Corina B3) + Proteína + Verdura.</span></footer>
 
 <script>
 const $ = id => document.getElementById(id);
 const tbody=$("tbody"), cards=$("cards"), pillDia=$("pillDia"), pillHora=$("pillHora"), tipBox=$("tipBox"), tipText=$("tipText"), tipIcon=$("tipIcon"), alertBox=$("alertBox"), alertList=$("alertList"), alertTitle=$("alertTitle"), alertTip=$("alertTip"), hoyList=$("hoyList"), hoyTag=$("hoyTag");
 
 const DIAS=["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
-const RATAS_HEMBRAS=2, RATAS_MACHO=1;
+const RATAS_HEMBRAS=2, RATAS_MACHO=1, RATAS_TOTAL=3;
 
 const MOMENTOS=[
-{ini:5,fin:12,e:"🌅",t:"Mañana: sirve la ración de las 2 hembras juntas en su jaula (14 g pienso) y la del macho en la suya (7 g). Revisa el agua de las 2."},
+{ini:5,fin:12,e:"🌅",t:"Mañana: cocina el total de la etiqueta amarilla, sepáralo y sirve en cada plato. Revisa el agua de las 2."},
 {ini:12,fin:18,e:"☀️",t:"Tarde: revisa que ambas jaulas hayan comido. Retira restos frescos y limpia bebederos si hace falta."},
-{ini:18,fin:22,e:"🌙",t:"Noche: segunda ración. Hembras juntas 14 g de pienso · macho solo 7 g. Vuelve a revisar el agua."},
+{ini:18,fin:22,e:"🌙",t:"Noche: segunda ración. Cocina el total, sepáralo y sirve en cada plato. Revisa el agua."},
 {ini:22,fin:24,e:"🌜",t:"Última hora: retira restos frescos de la cena en las 2 jaulas. Mañana será otro día."},
 {ini:0,fin:5,e:"🌜",t:"Madrugada: descanso. No toca comer."}
 ];
 
-// g = gramos POR RATA. Pienso: 7 g por rata y comida.
+// g = gramos POR RATA. Base: Pellet de cuy 7 g por rata y comida.
+// AHORA LA BASE TIENE EL SUSTITUTO EN LAS LETRAS AMARILLAS.
 const DATA=[
 {n:1,nm:"LUNES",
  mañana:[
-   {e:"🌾",c:"t-pienso",name:"Pienso (seco)",g:7},
-   {e:"🥚",c:"t-huevo",name:"Huevo duro picado",g:4,alts:["pollo cocido","pavo cocido","atún al natural escurrido"]}
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🥚",c:"t-huevo",name:"Huevo duro picado",g:4,alts:["pollo cocido","pavo cocido","atún al natural","merluza","corvina","bonito","jurel","lentejas","arvejas","garbanzos","frijoles sin piel","tofu firme","carne molida magra","hígado de pollo cocido"]}
  ],
  noche:[
-   {e:"🌾",c:"t-pienso",name:"Pienso (seco)",g:7},
-   {e:"🥦",c:"t-verdura",name:"Brócoli al vapor",g:4,alts:["judías verdes","coliflor","calabacín","acelgas"]},
-   {e:"🥕",c:"t-verdura",name:"Zanahoria al vapor",g:4,alts:["calabaza","remolacha","pimiento"]}
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🥦",c:"t-verdura",name:"Verdura",g:8,alts:["brócoli","zanahoria","vainitas","zapallito","calabacín","zapallo","acelgas","espinacas","coliflor","pimiento","pepino","tomate sin semillas","camote","choclo","arvejas","lechuga","apio","beterraga","papa cocida (sin cáscara)"]}
  ]},
 
 {n:2,nm:"MARTES",
  mañana:[
-   {e:"🌾",c:"t-pienso",name:"Pienso (seco)",g:7},
-   {e:"🍗",c:"t-carne",name:"Pechuga de pollo cocida",g:5,alts:["pavo","pescado blanco","huevo duro"]}
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🍗",c:"t-carne",name:"Pechuga de pollo cocida",g:5,alts:["pavo","merluza","bonito","jurel","atún al natural","huevo duro","lentejas","arvejas","garbanzos","frijoles sin piel","tofu firme","carne molida magra"]}
  ],
  noche:[
-   {e:"🌾",c:"t-pienso",name:"Pienso (seco)",g:7},
-   {e:"🥒",c:"t-verdura",name:"Pepino",g:5,alts:["pimiento","tomate sin semillas","calabacín"]},
-   {e:"🍎",c:"t-fruta",name:"Manzana sin semillas",g:3,alts:["pera","fresa","arándanos"]}
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🥒",c:"t-verdura",name:"Verdura o Fruta",g:8,alts:["pepino","pimiento","tomate sin semillas","manzana sin semillas","pera","fresa","arándanos","frambuesas","melón","sandía","kiwi","plátano de seda","durazno sin carozo","ciruela sin carozo","papaya sin semillas"]}
  ]},
 
 {n:3,nm:"MIÉRCOLES",
  mañana:[
-   {e:"🌾",c:"t-pienso",name:"Pienso (seco)",g:7},
-   {e:"🍚",c:"t-cereal",name:"Arroz integral cocido",g:5,alts:["quinoa","pasta integral","avena","patata cocida (nunca verde)"]}
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🍚",c:"t-cereal",name:"Arroz integral cocido",g:5,alts:["quinoa","fideos cocidos","avena","cebada","arroz blanco","mijo","trigo","maíz molido cocido"]}
  ],
  noche:[
-   {e:"🌾",c:"t-pienso",name:"Pienso (seco)",g:7},
-   {e:"🫛",c:"t-verdura",name:"Guisantes al vapor",g:4,alts:["habas","garbanzos cocidos sin piel","lentejas cocidas"]},
-   {e:"🥒",c:"t-verdura",name:"Calabacín al vapor",g:4,alts:["calabaza","judías verdes","pimiento"]}
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🫛",c:"t-verdura",name:"Verdura",g:8,alts:["arvejas","zapallito","habas","zapallo","vainitas","pimiento","brócoli","zanahoria","coliflor","espinacas","acelgas","pepino","tomate sin semillas","camote","choclo"]}
  ]},
 
 {n:4,nm:"JUEVES",
  mañana:[
-   {e:"🌾",c:"t-pienso",name:"Pienso (seco)",g:7},
-   {e:"🥚",c:"t-huevo",name:"Huevo duro picado",g:4,alts:["pollo cocido","atún al natural","pescado blanco"]}
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🥚",c:"t-huevo",name:"Huevo duro picado",g:4,alts:["pollo cocido","atún al natural","merluza","bonito","pavo cocido","lentejas","arvejas","garbanzos","frijoles sin piel","tofu firme","carne molida magra","hígado de pollo cocido"]}
  ],
  noche:[
-   {e:"🌾",c:"t-pienso",name:"Pienso (seco)",g:7},
-   {e:"🥬",c:"t-verdura",name:"Espinacas o rúcula",g:5,alts:["acelgas","canónigos","lechuga romana"]},
-   {e:"🍐",c:"t-fruta",name:"Pera sin semillas",g:3,alts:["plátano pequeño","manzana","melocotón sin hueso"]}
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🥬",c:"t-verdura",name:"Verdura o Fruta",g:8,alts:["espinacas","acelgas","canónigos","rúcula","lechuga romana","pera","manzana sin semillas","plátano de seda","durazno sin carozo","ciruela sin carozo","fresa","arándanos","frambuesas","melón","sandía","kiwi","papaya sin semillas"]}
  ]},
 
 {n:5,nm:"VIERNES",
  mañana:[
-   {e:"🌾",c:"t-pienso",name:"Pienso (seco)",g:7},
-   {e:"🍚",c:"t-cereal",name:"Quinoa cocida",g:5,alts:["arroz integral","pasta integral","avena"]}
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🍚",c:"t-cereal",name:"Quinoa cocida",g:5,alts:["arroz integral","fideos cocidos","avena","cebada","arroz blanco","mijo","trigo","maíz molido cocido"]}
  ],
  noche:[
-   {e:"🌾",c:"t-pienso",name:"Pienso (seco)",g:7},
-   {e:"🍗",c:"t-carne",name:"Pavo cocido sin piel",g:4,alts:["pollo","pescado blanco","huevo duro"]},
-   {e:"🫛",c:"t-verdura",name:"Judías verdes al vapor",g:4,alts:["brócoli","coliflor","calabacín"]}
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🍗",c:"t-carne",name:"Proteína o Verdura",g:8,alts:["pavo","pollo","merluza","bonito","jurel","brócoli","vainitas","zapallito","zanahoria","coliflor","pimiento","zapallo","camote","tofu firme"]}
  ]},
 
 {n:6,nm:"SÁBADO",
  mañana:[
-   {e:"🌾",c:"t-pienso",name:"Pienso (seco)",g:7},
-   {e:"🐟",c:"t-pescado",name:"Pescado blanco cocido",g:4,alts:["pollo","pavo","atún al natural escurrido"]}
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🐟",c:"t-pescado",name:"Pescado blanco cocido",g:4,alts:["pollo","pavo","atún al natural","huevo duro","bonito","jurel","lentejas","arvejas","garbanzos","frijoles sin piel","tofu firme","carne molida magra"]}
  ],
  noche:[
-   {e:"🌾",c:"t-pienso",name:"Pienso (seco)",g:7},
-   {e:"🫑",c:"t-verdura",name:"Pimiento dulce",g:4,alts:["pepino","calabacín","tomate sin semillas"]},
-   {e:"🫐",c:"t-fruta",name:"Frambuesas",g:2,alts:["fresas","arándanos","moras"]}
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🫑",c:"t-verdura",name:"Verdura o Fruta",g:6,alts:["pimiento","pepino","zapallito","frambuesas","fresas","arándanos","tomate sin semillas","manzana sin semillas","pera","melón","sandía","kiwi","durazno sin carozo","papaya sin semillas"]}
  ]},
 
 {n:0,nm:"DOMINGO",
  mañana:[
-   {e:"🌾",c:"t-pienso",name:"Pienso (seco)",g:7},
-   {e:"🥚",c:"t-huevo",name:"Huevo duro picado",g:4,alts:["pollo cocido","pavo cocido","atún al natural"]}
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🥚",c:"t-huevo",name:"Huevo duro picado",g:4,alts:["pollo cocido","pavo cocido","atún al natural","merluza","bonito","lentejas","arvejas","garbanzos","frijoles sin piel","tofu firme","carne molida magra","hígado de pollo cocido"]}
  ],
  noche:[
-   {e:"🌾",c:"t-pienso",name:"Pienso (seco)",g:7},
-   {e:"🥣",c:"t-sopa",name:"Sopa de verduras casera (solo caldo y verduras, sin sal)",g:8,alts:["solo caldo de verduras","puré de calabaza sin sal","puré de zanahoria"]}
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🥣",c:"t-sopa",name:"Sopa de verduras (sin sal)",g:8,alts:["caldo de verduras","puré de zapallo","puré de zanahoria","puré de zapallito","puré de camote","puré de papa (sin cáscara)"]}
  ]}
 ];
 
@@ -343,23 +356,39 @@ const formatItem = it => {
     : "";
   const gh = it.g * RATAS_HEMBRAS;
   const gm = it.g * RATAS_MACHO;
+  const gt = it.g * RATAS_TOTAL;
   return `<div class="tarea-linea ${it.c}">
     ${it.e} ${it.name}: <span class="gramos-rata">${it.g} g/rata</span>
     <div class="cage-split">
-      <span class="cage-pill h">🐭🐭 Hembras: ${gh} g</span>
-      <span class="cage-pill m">🐭 Macho: ${gm} g</span>
+      <span class="cage-pill h">🐭🐭 Plato Hembras: ${gh} g</span>
+      <span class="cage-pill m">🐭 Plato Macho: ${gm} g</span>
+      <span class="cage-pill t">🥘 Total a preparar: ${gt} g</span>
     </div>
     ${alts}
   </div>`;
 };
-const formatComida = arr => arr.map(formatItem).join("");
+
+const totalsLine = arr => {
+  const gRata = arr.reduce((s,it)=>s+it.g,0);
+  const gH = gRata * RATAS_HEMBRAS;
+  const gM = gRata * RATAS_MACHO;
+  const gAll = gH + gM;
+  return `<div class="meal-total">
+    <span class="mt-label">Σ Total de la comida</span>
+    <span class="mt-pill">${gRata} g/rata</span>
+    <span class="mt-pill h">🐭🐭 Plato Hembras: ${gH} g</span>
+    <span class="mt-pill m">🐭 Plato Macho: ${gM} g</span>
+    <span class="mt-pill" style="background:var(--item-total-bg); color:var(--item-total-t); border-color:var(--item-total-line);">🥘 Total a cocinar: ${gAll} g</span>
+  </div>`;
+};
+
+const formatComida = arr => arr.map(formatItem).join("") + totalsLine(arr);
 const totalPorRata = arr => arr.reduce((s,it)=>s+it.g,0);
-const totalPorCaja = arr => arr.reduce((s,it)=>s+(it.g*RATAS_HEMBRAS),0);
 
 const resumenComidaPorCaja = arr => {
-  const h = arr.map(it => `${it.e} ${it.name.replace(/ \(seco\)/,"")} ${it.g*RATAS_HEMBRAS}g`).join(" + ");
-  const m = arr.map(it => `${it.e} ${it.name.replace(/ \(seco\)/,"")} ${it.g*RATAS_MACHO}g`).join(" + ");
-  return {h, m};
+  const h = arr.map(it => `${it.e} ${it.name.replace(/ \(Base\)/,"")} ${it.g*RATAS_HEMBRAS}g`).join(" + ");
+  const m = arr.map(it => `${it.e} ${it.name.replace(/ \(Base\)/,"")} ${it.g*RATAS_MACHO}g`).join(" + ");
+  return {h, m, gRata: totalPorRata(arr), gH: totalPorRata(arr)*RATAS_HEMBRAS, gM: totalPorRata(arr)*RATAS_MACHO};
 };
 
 const diaVert = n => `<span class="dia-letras">${n.split("").map(c=>`<span>${c}</span>`).join("")}</span>`;
@@ -413,16 +442,23 @@ const actualizar = () => {
             hoyTag.textContent = dd.nm;
             const rm = resumenComidaPorCaja(dd.mañana);
             const rn = resumenComidaPorCaja(dd.noche);
+            const totDiaRata = rm.gRata + rn.gRata;
+            const totDiaH = rm.gH + rn.gH;
+            const totDiaM = rm.gM + rn.gM;
             hoyList.innerHTML = `
               <div class="hoy-item hoy-manana">
                 <span class="hoy-name">🌅 Mañana</span>
-                <div class="hoy-cage h">🐭🐭 <b>Hembras:</b> ${rm.h}</div>
-                <div class="hoy-cage m">🐭 <b>Macho:</b> ${rm.m}</div>
+                <div class="hoy-cage h">🐭🐭 <b>Plato Hembras:</b> ${rm.h}</div>
+                <div class="hoy-cage m">🐭 <b>Plato Macho:</b> ${rm.m}</div>
               </div>
               <div class="hoy-item hoy-noche">
                 <span class="hoy-name">🌙 Noche</span>
-                <div class="hoy-cage h">🐭🐭 <b>Hembras:</b> ${rn.h}</div>
-                <div class="hoy-cage m">🐭 <b>Macho:</b> ${rn.m}</div>
+                <div class="hoy-cage h">🐭🐭 <b>Plato Hembras:</b> ${rn.h}</div>
+                <div class="hoy-cage m">🐭 <b>Plato Macho:</b> ${rn.m}</div>
+              </div>
+              <div class="hoy-item" style="background:var(--total-bg);border-color:var(--total-line);">
+                <span class="hoy-name" style="color:var(--total-t);">📊 Total del día</span>
+                <div class="hoy-total">Σ ${totDiaRata} g/rata · ${totDiaH} g hembras · ${totDiaM} g macho · ${totDiaH+totDiaM} g todo</div>
               </div>`;
 
             Array.from(cards.children).forEach(c => {
@@ -444,21 +480,29 @@ const actualizar = () => {
             const dd = DATA.find(d => d.n === hoy);
             const items = act.name === "Mañana" ? dd.mañana : dd.noche;
 
-            const totalH = items.reduce((s,it)=>s+(it.g*RATAS_HEMBRAS),0);
-            const totalM = items.reduce((s,it)=>s+(it.g*RATAS_MACHO),0);
+            const gRata = totalPorRata(items);
+            const totalH = gRata * RATAS_HEMBRAS;
+            const totalM = gRata * RATAS_MACHO;
+            const totalAll = totalH + totalM;
 
             const lineas = items.map(it => {
               const alts = it.alts && it.alts.length
-                ? ` <span style="color:var(--soft);font-weight:500;font-style:italic">(o ${it.alts.slice(0,2).join(" / ")})</span>`
+                ? ` <span style="color:var(--soft);font-weight:500;font-style:italic">(o ${it.alts.slice(0,5).join(" / ")})</span>`
                 : "";
-              return `<div class="alert-item"><span class="alert-zona">${it.e} ${it.name}${alts}</span><span class="alert-qty">${it.g} g/rata</span></div>`;
+              const itemTotal = it.g * RATAS_TOTAL;
+              return `<div class="alert-item">
+                <span class="alert-zona">${it.e} ${it.name}${alts}</span>
+                <span class="alert-qty">${it.g} g/rata</span>
+                <span class="alert-total-item">🥘 Preparar: ${itemTotal} g</span>
+              </div>`;
             }).join("");
 
             alertList.innerHTML = lineas + `
               <div class="alert-cages">
-                <div class="alert-cage h">🐭🐭 <b>Jaula hembras (2):</b> ${totalH} g en total</div>
-                <div class="alert-cage m">🐭 <b>Jaula macho (1):</b> ${totalM} g en total</div>
-              </div>`;
+                <div class="alert-cage h">🐭🐭 <b>Plato Hembras:</b> ${totalH} g</div>
+                <div class="alert-cage m">🐭 <b>Plato Macho:</b> ${totalM} g</div>
+              </div>
+              <div class="alert-total">Σ ${gRata} g/rata · ${totalH} g hembras · ${totalM} g macho · 🥘 A cocinar: ${totalAll} g</div>`;
             alertTip.style.display = "block";
         }
 
