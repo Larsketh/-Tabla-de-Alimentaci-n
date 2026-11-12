@@ -274,76 +274,81 @@ const MOMENTOS=[
 {ini:0,fin:5,e:"🌜",t:"Madrugada: descanso. No toca comer."}
 ];
 
+// El texto del sustituto con la división y total
+const SUSTITUTO_ALTS = [`<span style="color:var(--soft)">Si se acaba el pienso (por rata):</span> 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria.<br>
+      <span style="display:inline-block; margin-top:4px; font-size:11.5px; color:var(--jaula-h-t)">🐭🐭 Plato Hembras: 8 g arroz + 6 g huevo + 2 rodajas</span> · 
+      <span style="display:inline-block; font-size:11.5px; color:var(--jaula-m-t)">🐭 Plato Macho: 4 g arroz + 3 g huevo + 1 rodaja</span> · 
+      <span style="display:inline-block; font-size:11.5px; color:var(--item-total-t)">🥘 Total a cocinar: 12 g arroz + 9 g huevo + 3 rodajas</span>`];
+
 // g = gramos POR RATA. Base: Pellet de cuy 7 g por rata y comida.
-// AHORA LA BASE TIENE EL SUSTITUTO EN LAS LETRAS AMARILLAS.
 const DATA=[
 {n:1,nm:"LUNES",
  mañana:[
-   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:SUSTITUTO_ALTS},
    {e:"🥚",c:"t-huevo",name:"Huevo duro picado",g:4,alts:["pollo cocido","pavo cocido","atún al natural","merluza","corvina","bonito","jurel","lentejas","arvejas","garbanzos","frijoles sin piel","tofu firme","carne molida magra","hígado de pollo cocido"]}
  ],
  noche:[
-   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:SUSTITUTO_ALTS},
    {e:"🥦",c:"t-verdura",name:"Verdura",g:8,alts:["brócoli","zanahoria","vainitas","zapallito","calabacín","zapallo","acelgas","espinacas","coliflor","pimiento","pepino","tomate sin semillas","camote","choclo","arvejas","lechuga","apio","beterraga","papa cocida (sin cáscara)"]}
  ]},
 
 {n:2,nm:"MARTES",
  mañana:[
-   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:SUSTITUTO_ALTS},
    {e:"🍗",c:"t-carne",name:"Pechuga de pollo cocida",g:5,alts:["pavo","merluza","bonito","jurel","atún al natural","huevo duro","lentejas","arvejas","garbanzos","frijoles sin piel","tofu firme","carne molida magra"]}
  ],
  noche:[
-   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:SUSTITUTO_ALTS},
    {e:"🥒",c:"t-verdura",name:"Verdura o Fruta",g:8,alts:["pepino","pimiento","tomate sin semillas","manzana sin semillas","pera","fresa","arándanos","frambuesas","melón","sandía","kiwi","plátano de seda","durazno sin carozo","ciruela sin carozo","papaya sin semillas"]}
  ]},
 
 {n:3,nm:"MIÉRCOLES",
  mañana:[
-   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:SUSTITUTO_ALTS},
    {e:"🍚",c:"t-cereal",name:"Arroz integral cocido",g:5,alts:["quinoa","fideos cocidos","avena","cebada","arroz blanco","mijo","trigo","maíz molido cocido"]}
  ],
  noche:[
-   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:SUSTITUTO_ALTS},
    {e:"🫛",c:"t-verdura",name:"Verdura",g:8,alts:["arvejas","zapallito","habas","zapallo","vainitas","pimiento","brócoli","zanahoria","coliflor","espinacas","acelgas","pepino","tomate sin semillas","camote","choclo"]}
  ]},
 
 {n:4,nm:"JUEVES",
  mañana:[
-   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:SUSTITUTO_ALTS},
    {e:"🥚",c:"t-huevo",name:"Huevo duro picado",g:4,alts:["pollo cocido","atún al natural","merluza","bonito","pavo cocido","lentejas","arvejas","garbanzos","frijoles sin piel","tofu firme","carne molida magra","hígado de pollo cocido"]}
  ],
  noche:[
-   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:SUSTITUTO_ALTS},
    {e:"🥬",c:"t-verdura",name:"Verdura o Fruta",g:8,alts:["espinacas","acelgas","canónigos","rúcula","lechuga romana","pera","manzana sin semillas","plátano de seda","durazno sin carozo","ciruela sin carozo","fresa","arándanos","frambuesas","melón","sandía","kiwi","papaya sin semillas"]}
  ]},
 
 {n:5,nm:"VIERNES",
  mañana:[
-   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:SUSTITUTO_ALTS},
    {e:"🍚",c:"t-cereal",name:"Quinoa cocida",g:5,alts:["arroz integral","fideos cocidos","avena","cebada","arroz blanco","mijo","trigo","maíz molido cocido"]}
  ],
  noche:[
-   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:SUSTITUTO_ALTS},
    {e:"🍗",c:"t-carne",name:"Proteína o Verdura",g:8,alts:["pavo","pollo","merluza","bonito","jurel","brócoli","vainitas","zapallito","zanahoria","coliflor","pimiento","zapallo","camote","tofu firme"]}
  ]},
 
 {n:6,nm:"SÁBADO",
  mañana:[
-   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:SUSTITUTO_ALTS},
    {e:"🐟",c:"t-pescado",name:"Pescado blanco cocido",g:4,alts:["pollo","pavo","atún al natural","huevo duro","bonito","jurel","lentejas","arvejas","garbanzos","frijoles sin piel","tofu firme","carne molida magra"]}
  ],
  noche:[
-   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:SUSTITUTO_ALTS},
    {e:"🫑",c:"t-verdura",name:"Verdura o Fruta",g:6,alts:["pimiento","pepino","zapallito","frambuesas","fresas","arándanos","tomate sin semillas","manzana sin semillas","pera","melón","sandía","kiwi","durazno sin carozo","papaya sin semillas"]}
  ]},
 
 {n:0,nm:"DOMINGO",
  mañana:[
-   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:SUSTITUTO_ALTS},
    {e:"🥚",c:"t-huevo",name:"Huevo duro picado",g:4,alts:["pollo cocido","pavo cocido","atún al natural","merluza","bonito","lentejas","arvejas","garbanzos","frijoles sin piel","tofu firme","carne molida magra","hígado de pollo cocido"]}
  ],
  noche:[
-   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:["Si se acaba: 4 g arroz cocido + 3 g huevo duro + 1 rodaja zanahoria"]},
+   {e:"🌾",c:"t-pienso",name:"Pienso de cuy (Base)",g:7,alts:SUSTITUTO_ALTS},
    {e:"🥣",c:"t-sopa",name:"Sopa de verduras (sin sal)",g:8,alts:["caldo de verduras","puré de zapallo","puré de zanahoria","puré de zapallito","puré de camote","puré de papa (sin cáscara)"]}
  ]}
 ];
